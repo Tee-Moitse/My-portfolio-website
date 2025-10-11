@@ -284,6 +284,10 @@ section {
 
 /* ABOUT ME SECTION*/
 
+#about {
+    margin-top: 50px;
+}
+
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
