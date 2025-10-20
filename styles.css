@@ -420,6 +420,7 @@ article .icon {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
+    width: 50%;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     margin: 2rem auto;
