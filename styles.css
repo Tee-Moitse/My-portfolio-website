@@ -297,6 +297,15 @@ section {
     height: 80vh;
 }
 
+.profile__pic-container img {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    margin: 75px 0;
+    border-radius: 50%;
+    /* margin-right: 40px; */
+}
+
 .section__pic-container img {
     display: flex;
     height: 450px;
