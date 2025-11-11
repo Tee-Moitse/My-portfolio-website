@@ -3,22 +3,25 @@ const portfolioData = {
         {
             category: "Programming Languages",
             icon: "fas fa-code",
-            items: ["Java", "Python", "JavaScript", "PHP", "SQL", "HTML", "CSS"]
+            items: ["Java", "Python", "JavaScript", "SQL", "HTML", "CSS", "Dart" ]
         },
         {
             category: "Development Tools",
             icon: "fas fa-tools",
-            items: ["Git", "Docker", "GitLab", "CI/CD", "Build Pipelines", "Testing", "Linux", "Virtual Machines"]
+            items: ["Git", "Docker", "GitLab", "CI/CD", "Build Pipelines", "Unit Testing", "Virtual Machines", "JetBrains", "VS Code"]
         },
         {
             category: "Frameworks & Technologies",
             icon: "fas fa-database",
-            items: ["WordPress", "Bootstrap", "Sass", "Javalin", "REST APIs", "Databases", "UML", "SDLC"]
+            items: ["Bootstrap", "Javalin", "REST APIs","BaaS","Databases","Django", "Flask", "Flutter", "Tailwind" ]
         },
         {
             category: "Soft Skills",
             icon: "fas fa-users",
-            items: ["Team Leadership", "Problem Solving", "Adaptability", "Communication", "Attention to Detail", "Mentoring", "Project Management"]
+            items: ["Accountability","Creative thinking","Critical thinking", "Analytical Problem Solving", "Adaptability", 
+                "Effective Communication", "Active listening", "Team-oriented collaboration", "Goal orientation"
+                ,"Emotional intelligence", "Time management", "Discipline", "Resilience"
+            ]
         }
     ],
 }

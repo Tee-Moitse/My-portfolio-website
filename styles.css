@@ -6,7 +6,7 @@
     --foreground: #e7e9ea;
     --card: #17181c;
     --card-foreground: oklch(0.8853 0 0);
-    --primary: oklch(0.6692 0.1607 245.0110);
+    --primary: oklch(77.837% 0.12756 348.778);
     --primary-foreground: oklch(1.0000 0 0);
     --secondary: oklch(0.9622 0.0035 219.5331);
     --secondary-foreground: oklch(0.1884 0.0128 248.5103);
@@ -31,6 +31,7 @@
 
 body {
     font-family: 'Poppins' sans-serif;
+    /* background: var(--card); */
 }
 
 html {
