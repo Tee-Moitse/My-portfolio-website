@@ -6,7 +6,7 @@ function toggleMenu(){
     menu.classList.toggle("open")
     icon.classList.toggle("open")
 }
-console.log(portfolioData);
+// console.log(portfolioData);
 
 const portfolioData = {
     skills: [
