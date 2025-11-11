@@ -572,10 +572,18 @@ section {
     position: relative;
 }
 
+
 .color-container {
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    border-color: var(--border);
+    background: var(--card);
 }
+
+
+.color-container:hover {
+    border-color: var(--primary);
+    transform: scale(1.05);
+}
+
 
 .project-img {
     border-radius: 2rem;
@@ -583,10 +591,12 @@ section {
     height: 90%;
 }
 
+
 .project-title {
     margin: 1rem;
-    color: black;
+    color: var(--card-foreground);
 }
+
 
 .project-btn {
     color: black;
