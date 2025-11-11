@@ -580,6 +580,7 @@ section {
 
 
 .color-container:hover {
+    background: var(--accent);
     border-color: var(--primary);
     transform: scale(1.05);
 }
