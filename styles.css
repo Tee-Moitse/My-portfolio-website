@@ -377,6 +377,11 @@ section {
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
+    /* background: var(--accent); */
+}
+
+#socials-container img {
+    border-radius: 40%;
 }
 
 
@@ -406,7 +411,7 @@ section {
 }
 
 .btn-color-1, .btn-color-2 {
-    border: rgb(53,53,53) 0.1rem solid;
+    border: pink;
 }
 
 
@@ -417,22 +422,23 @@ section {
 
 .btn-color-1, .btn-color-2:hover {
    background: rgb(53, 53, 53);
-   color: #fff;
+   color: var(--primary);
 }
 
 
 .btn-color-1:hover {
-    color: rgb(0, 0, 0);
+    color: var(--primary);
 }
 
 
 .btn-color-2 {
-    background: none;
+    background: var(--card-foreground);
+    /* border: #d9d9d9; */
 }
 
 
 .btn-color-2:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
+    border: var(--primary);
 }
 
 .btn-container {
