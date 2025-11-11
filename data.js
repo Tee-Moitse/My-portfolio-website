@@ -3,7 +3,7 @@ const portfolioData = {
         {
             category: "Programming Languages",
             icon: "fas fa-code",
-            items: ["Java", "C#", "Python", "JavaScript", "PHP", "SQL", "HTML", "CSS"]
+            items: ["Java", "Python", "JavaScript", "PHP", "SQL", "HTML", "CSS"]
         },
         {
             category: "Development Tools",
@@ -23,4 +23,18 @@ const portfolioData = {
     ],
 }
 
-export default portfolioData;
+buildSkillsSection();
+
+function buildSkillsSection() {
+    const skillsGrid = document.getElementById('skills-grid');
+    skillsGrid.innerHTML = portfolioData.skills.map(skillCategory => 
+        `<div class="skill-category">
+            <h3><i class="${skillCategory.icon}"></i> ${skillCategory.category}</h3>
+            <div class="skill-list">
+                ${skillCategory.items.map(skill => `<span class="skill-item">${skill}</span>`).join('')}
+            </div>
+        </div>`
+    ).join('');
+}
+
+// export default portfolioData;
