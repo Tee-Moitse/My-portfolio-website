@@ -1,3 +1,4 @@
+
 const portfolioData = {
     skills: [
         {
@@ -18,26 +19,26 @@ const portfolioData = {
         {
             category: "Soft Skills",
             icon: "fas fa-users",
-            items: ["Accountability","Creative thinking","Critical thinking", "Analytical Problem Solving", "Adaptability", 
-                "Effective Communication", "Active listening", "Team-oriented collaboration", "Goal orientation"
-                ,"Emotional intelligence", "Time management", "Discipline", "Resilience"
+            items: ["Creativity","Critical thinking", "Analytical Problem Solving", "Adaptability", 
+                "Effective Communication", "Active listening", "Team-oriented collaboration",
+                , "Discipline"
             ]
         }
     ],
 }
 
-buildSkillsSection();
+// buildSkillsSection();
 
-function buildSkillsSection() {
-    const skillsGrid = document.getElementById('skills-grid');
-    skillsGrid.innerHTML = portfolioData.skills.map(skillCategory => 
-        `<div class="skill-category">
-            <h3><i class="${skillCategory.icon}"></i> ${skillCategory.category}</h3>
-            <div class="skill-list">
-                ${skillCategory.items.map(skill => `<span class="skill-item">${skill}</span>`).join('')}
-            </div>
-        </div>`
-    ).join('');
-}
+// function buildSkillsSection() {
+//     const skillsGrid = document.getElementById('skills-grid');
+//     skillsGrid.innerHTML = portfolioData.skills.map(skillCategory => 
+//         `<div class="skill-category">
+//             <h3><i class="${skillCategory.icon}"></i> ${skillCategory.category}</h3>
+//             <div class="skill-list">
+//                 ${skillCategory.items.map(skill => `<span class="skill-item">${skill}</span>`).join('')}
+//             </div>
+//         </div>`
+//     ).join('');
+// }
 
 // export default portfolioData;
