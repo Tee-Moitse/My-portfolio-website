@@ -31,6 +31,27 @@ const portfolioData = {
             items: ["Team Leadership", "Problem Solving", "Adaptability", "Communication", "Attention to Detail", "Mentoring", "Project Management"]
         }
     ],
+
+    projects: [
+        {
+            title: "Salon Appointment Management System",
+            description: "A comprehensive system that allows both salon staff and clients to efficiently manage, save, and email appointment information. Features intuitive scheduling, automated notifications, and seamless communication.",
+            skills: ["Java", "Database", "Email API"],
+            link: "https://github.com/NkosiMlaba/SalonAppointmentManagement"
+        },
+        {
+            title: "Facial Recognition Attendance System",
+            description: "An innovative attendance tracking system using facial recognition technology. Provides accurate, contactless attendance monitoring with real-time processing and comprehensive reporting capabilities.",
+            skills: ["Python", "OpenCV", "Machine Learning"],
+            link: "https://github.com/NkosiMlaba/Facial-Recognition-Attendance-System"
+        },
+        {
+            title: "AI Resume Builder",
+            description: "A dynamic web application for creating ATS-friendly, job-specific resumes and generating tailored cover letters. Leverages AI to optimize content for specific job requirements and industries.",
+            skills: ["JavaScript", "AI Integration", "Web Development"],
+            link: "https://github.com/NkosiMlaba/Dynamic-Resume-Builder-with-AI"
+        }
+    ]
 }
 
 buildSkillsSection();
@@ -46,6 +67,8 @@ function buildSkillsSection() {
         </div>`
     ).join('');
 }
+
+
 
 // function myFunction() {
 //    var element = document.body;

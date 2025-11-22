@@ -576,13 +576,20 @@ section {
 .color-container {
     border-color: var(--border);
     background: var(--card);
+    /* background: var(--card); */
+    padding: 2rem;
+    border-radius: var(--radius);
+    border: 2px solid var(--border);
+    transition: all 0.3s ease;
 }
 
 
 .color-container:hover {
-    background: var(--accent);
+    /* background: var(--accent); */
     border-color: var(--primary);
     transform: scale(1.05);
+    /* border-color: var(--primary); */
+    transform: translateY(-5px);
 }
 
 
@@ -592,16 +599,36 @@ section {
     height: 90%;
 }
 
+.project-img-salon {
+    border-radius: 2rem;
+    width: 300px;
+    height: 300px;
+}
+
+.project-img-pink {
+    border-radius: 2rem;
+    width: 300px;
+    height: 300px;
+}
+
 
 .project-title {
+    font-size: larger;
     margin: 1rem;
-    color: var(--card-foreground);
+    color: var(--primary);
+    text-shadow: 0 0 7px #911469;
 }
 
 
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+}
+
+.project-info {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    margin-bottom: 17px;
 }
 
 
