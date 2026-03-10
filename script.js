@@ -7,6 +7,81 @@ function toggleMenu(){
     icon.classList.toggle("open")
 }
 
+/* ===== TYPING ANIMATION ===== */
+(function initTypingAnimation() {
+    const titles = [
+        { text: "Software Engineer",   color: "#f394c4" },  // pink (existing primary)
+        { text: "Frontend Developer",  color: "#64d8ff" },  // cyan/blue
+        { text: "Cloud Engineer",      color: "#a78bfa" },  // violet/purple
+        { text: "Web Developer",       color: "#34d399" },  // emerald green
+    ];
+
+    const typedTextEl = document.getElementById("typed-text");
+    const typedTitleEl = document.getElementById("typed-title");
+    const glowEl       = document.getElementById("profile-glow");
+
+    if (!typedTextEl || !typedTitleEl) return;
+
+    let titleIndex = 0;
+    let charIndex  = 0;
+    let isDeleting = false;
+
+    // Delays (ms)
+    const TYPE_SPEED   = 80;
+    const DELETE_SPEED = 45;
+    const PAUSE_AFTER  = 1800;  // pause when fully typed
+    const PAUSE_BEFORE = 300;   // pause before starting to delete
+
+    function setColor(color) {
+        typedTitleEl.style.color = color;
+        if (glowEl) {
+            // Update the CSS custom property on the glow element directly
+            glowEl.style.background =
+                `radial-gradient(ellipse 70% 60% at 50% 40%, ${color} 0%, transparent 70%)`;
+        }
+    }
+
+    function tick() {
+        const current = titles[titleIndex];
+        const fullText = current.text;
+
+        // Apply color of the current title
+        setColor(current.color);
+
+        if (!isDeleting) {
+            // Type one character
+            typedTextEl.textContent = fullText.slice(0, charIndex + 1);
+            charIndex++;
+
+            if (charIndex === fullText.length) {
+                // Fully typed — pause then start deleting
+                isDeleting = true;
+                setTimeout(tick, PAUSE_AFTER);
+                return;
+            }
+            setTimeout(tick, TYPE_SPEED);
+        } else {
+            // Delete one character
+            typedTextEl.textContent = fullText.slice(0, charIndex - 1);
+            charIndex--;
+
+            if (charIndex === 0) {
+                // Fully deleted — move to next title
+                isDeleting = false;
+                titleIndex = (titleIndex + 1) % titles.length;
+                setTimeout(tick, PAUSE_BEFORE);
+                return;
+            }
+            setTimeout(tick, DELETE_SPEED);
+        }
+    }
+
+    // Kick off after a short initial delay
+    setTimeout(tick, 600);
+})();
+/* ============================ */
+
+
 function buildSkillsSection() {
     const skillsGrid = document.getElementById("skills-grid");
 
