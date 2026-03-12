@@ -90,7 +90,6 @@ a {
 
 a:hover {
     color: var(--primary);
-    text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: var(--primary);
     text-shadow: 0 0 10px #ff00aa,
