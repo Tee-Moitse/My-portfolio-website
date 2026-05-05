@@ -7,12 +7,12 @@ function toggleMenu(){
     icon.classList.toggle("open")
 }
 
-/* ===== TYPING ANIMATION ===== */
+/* TYPING ANIMATION*/
 (function initTypingAnimation() {
     const titles = [
         { text: "Software Engineer",   color: "#f394c4" },  // pink (existing primary)
         { text: "Frontend Developer",  color: "#66e929" },  // red
-        { text: "IT Analyst",      color: "#a78bfa" },  // violet/purple
+        { text: "Fullstack developer",      color: "#a78bfa" },  // violet/purple
         { text: "Web Developer",       color: "#34d399" },  // emerald green
     ];
 
